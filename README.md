@@ -1,15 +1,20 @@
 Reading List Scripts
 ====================
 
-This repository contains a handful of scripts that I've found useful for creating a reading list of academic papers that syncs to my mobile devices. The scripts allow you to flag papers in Papers.app, and have those papers appear in a Dropbox folder. This lets you read those papers from iOS devices and the web. Another script will also sync a folder of papers from Dropbox to a Kindle locally when you connect the Kindle.
+This repository contains a handful of scripts that I've found useful for creating a reading list of academic papers that syncs to my mobile devices and the web. The scripts allow you to flag papers in Papers.app, and have those papers appear in a Dropbox folder. This lets you read those papers from iOS devices and the web. Another script will also sync a folder of papers from Dropbox to a Kindle locally when you connect the Kindle.
+
+If you're uncomfortable using these scripts, [Papers Touch][PapersTouch] is much easier to use for syncing your Papers library to your iOS devices.
+
+[PapersTouch]: http://www.mekentosj.com/papers/touch
 
 
 Set up a sandbox
 ----------------
 
-Before you start playing with the scripts, I recommend that you pause Dropbox syncing to make sure you are happy with the results before actually sending the results to the Dropbox server. To do this choose "Pause Dropbox Syncing" from the Dropbox menu.
+Before you start playing with the scripts, pause Dropbox syncing to make sure you are happy with the results before actually sending data to the Dropbox server. To do this choose **Pause Syncing** from the Dropbox menu.
 
 ![In the Dropbox menu, choose *Pause Syncing*](pauseSyncing.png)
+
 
 Getting Started
 ---------------
@@ -45,6 +50,7 @@ You can also change when the script will sync your reading list by customizing t
 
 Instead of using launchd to run the Kindle scripts, I run them with an automator action which also downloads my Instapaper articles. I've included that workflow too.
 
+
 Installation
 ------------
 
@@ -74,7 +80,7 @@ To test if the scripts are working correctly, you can have launchd kick off the 
 Using the Reading List
 ----------------------
 
-In Papers.app, choose the papers that you want to put in your reading list by selecting the paper and choosing *Paper->Mark As Flagged* or clicking on the flag column in the list of papers. Papers that you flag will show up in your Reading List folder in Dropbox the next time that the script runs.
+In Papers.app, choose the papers that you want to put in your reading list by selecting the paper and choosing *Paper->Mark As Flagged* or clicking on the flag column in the list of papers. Papers that you flag will show up your `Dropbox/ReadingList` folder the next time that the script runs.
 
 Note that if you already had papers flagged, these will be added to your reading list. If you already had a large number of papers flagged, but you don't want these papers in your Reading List on Dropbox, you might want to add these to another folder and uncheck them before running the reading list scripts. The scripts do not support narrowing your reading list down by folder, etc. All flagged papers will be synced to Dropbox, and you will need enough space on your Dropbox account to contain your reading list.
 
