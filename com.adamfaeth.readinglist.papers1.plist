@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" \
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<dict>
+        <key>Label</key>
+        <string>com.adamfaeth.readinglist</string>
+        <key>Program</key>
+        <string>./Library/Scripts/com.adamfaeth.readinglist.papers1.sh</string>
+        <key>ProgramArguments</key>
+        <array>
+                <string>com.adamfaeth.readinglist.papers1.sh</string>
+        </array>
+        <key>StartCalendarInterval</key>
+        	<dict>
+        		<key>Hour</key>
+        		<integer>17</integer>
+        		<key>Minute</key>
+        		<integer>32</integer>
+        	</dict>
+        <key>LowPriorityIO</key>
+            <true/>
+        <key>WorkingDirectory</key>
+        <string>/Users/__my_username__</string>
+</dict>
+</plist>
