@@ -24,7 +24,7 @@
 
 user=`whoami`
 syncFrom="/Users/${user}/Dropbox/ReadingList/"
-syncTo="/Volumes/Kindle/Documents/Reading List"
+syncTo="/Volumes/Kindle/Documents/ReadingList"
 
 
 mkdir -p "$syncTo"
