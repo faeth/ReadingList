@@ -31,3 +31,5 @@ mkdir -p "$syncTo"
 
 # use capital-L to copy original files, not symlinks
 rsync -aL --delete "$syncFrom" "$syncTo"
+
+echo "Finished syncing papers from Dropbox/ReadingList to Kindle."

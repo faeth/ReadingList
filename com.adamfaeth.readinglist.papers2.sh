@@ -62,3 +62,5 @@ done
 rsync -al --delete "$tmpFolder" "$syncTo"
 
 rm -rf "$tmpFolder"
+
+echo "Finished syncing papers to Dropbox/ReadingList."
