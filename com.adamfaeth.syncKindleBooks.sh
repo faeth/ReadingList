@@ -24,12 +24,12 @@
 
 user=`whoami`
 syncFrom="/Users/${user}/Books/"
-syncTo="/Volumes/Kindle/Documents/Books"
+syncTo="/Volumes/Kindle/Documents/Books/"
 
 
 mkdir -p "$syncTo"
 
 # use capital-L to copy original files, not symlinks
-rsync -aL -n --include "*/" --include "*.pdf" --include "*.mobi" --exclude "*" --delete "$syncFrom" "$syncTo"
+rsync -aL --include "*.pdf" --include "*.mobi" --exclude "*/" --delete "$syncFrom" "$syncTo/"
 
 echo "Finished syncing Books to Kindle."
