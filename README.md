@@ -68,7 +68,7 @@ The Kindle Scripts work with either version of the above script.
 
     make install-kindle
 
-There are Automator workflows included for calling the scripts when the Kindle gets connected and calling the reading list script from the OS X services menu. The simplest way to install these actions is to open the workflows. Automator will ask if you want to install them as a folder action (on the /Volumes/Kindle folder) and a service respectively. 
+There are Automator workflows included for calling the scripts when the Kindle gets connected and calling the reading list script from the OS X services menu. The simplest way to install these actions is to open the workflows. Automator will ask if you want to install them as a folder action (on the /Volumes folder) and a service respectively. 
   
 To test if the scripts are working correctly, you can have launchd kick off the script immediately. Errors will be reported in the console, rather than in the terminal. 
 
