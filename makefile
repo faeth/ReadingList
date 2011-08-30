@@ -20,8 +20,4 @@ install-kindle :
 	mkdir -p ~/Library/Workflows/Applications/Folder\ Actions/
 	cp com.adamfaeth.kindleReadingList.sh ~/Library/Scripts/
 	cp com.adamfaeth.syncKindleBooks.sh ~/Library/Scripts/
-	cp -R "Kindle Connected.workflow" ~/Library/Workflows/Applications/Folder\ Actions/
 
-install-service :
-	mkdir -p ~/Library/Services
-	cp -R "Sync Reading List.workflow" ~/Library/Services/

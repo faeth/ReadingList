@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>247.1</string>
+	<string>329</string>
 	<key>AMApplicationVersion</key>
-	<string>2.1.1</string>
+	<string>2.2</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -25,7 +25,11 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.0</string>
+				<string>1.0.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict>
 					<key>source</key>
@@ -49,14 +53,10 @@
 					<key>source</key>
 					<string>on device_is_connected(device_name)	set check_for_device to "ioreg -rn " &amp; quoted form of device_name	return (length of (do shell script check_for_device) is not equal to 0)end device_is_connectedon run {input, parameters}	(* This will also run if another drive mounts to /Volumes while the Kindle is connected *)	if not device_is_connected("Amazon Kindle") then		error number -128	end if		(*if device_is_connected("Amazon Kindle") then		this could also download file...but I don't know if it would happen in the background like it does with the automator action.				I tried this, which would download in the background, but the problem is that curl doesn't get Safari's cookies, so it won't sign in to Instapaper and probably gets a 404 error.				set theURL to "http://www.instapaper.com/mobi"set theFolder to "~/Desktop"set result to (do shell script "curl -o " &amp; quoted form of theFolder &amp; " " &amp; theURL)	end if*)	end run</string>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Automator</string>
-				</array>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
 				<key>CFBundleVersion</key>
-				<string>1.0</string>
+				<string>1.0.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -105,7 +105,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:1391.000000</string>
+				<string>309.500000:1391.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -127,7 +127,11 @@ end run</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>2.0.1</string>
+				<string>2.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict>
 					<key>COMMAND_STRING</key>
@@ -167,14 +171,10 @@ end run</string>
 					<key>source</key>
 					<string></string>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Automator</string>
-				</array>
 				<key>BundleIdentifier</key>
 				<string>com.apple.RunShellScript</string>
 				<key>CFBundleVersion</key>
-				<string>2.0.1</string>
+				<string>2.0.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -274,7 +274,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:898.000000</string>
+				<string>309.500000:1078.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -296,7 +296,11 @@ end run</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>2.0.1</string>
+				<string>2.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict>
 					<key>COMMAND_STRING</key>
@@ -326,7 +330,7 @@ end run</string>
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>exec ~/Library/Scripts/com.adamfaeth.readingList.sh</string>
+					<string>exec ~/Library/Scripts/com.adamfaeth.readingList.papers2.sh</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -336,14 +340,10 @@ end run</string>
 					<key>source</key>
 					<string></string>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Automator</string>
-				</array>
 				<key>BundleIdentifier</key>
 				<string>com.apple.RunShellScript</string>
 				<key>CFBundleVersion</key>
-				<string>2.0.1</string>
+				<string>2.0.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -443,7 +443,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:715.000000</string>
+				<string>309.500000:895.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -465,7 +465,11 @@ end run</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>2.0.1</string>
+				<string>2.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict>
 					<key>COMMAND_STRING</key>
@@ -505,14 +509,10 @@ end run</string>
 					<key>source</key>
 					<string></string>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Automator</string>
-				</array>
 				<key>BundleIdentifier</key>
 				<string>com.apple.RunShellScript</string>
 				<key>CFBundleVersion</key>
-				<string>2.0.1</string>
+				<string>2.0.2</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<false/>
 				<key>CanShowWhenRun</key>
@@ -612,7 +612,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:532.000000</string>
+				<string>309.500000:712.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -630,11 +630,15 @@ end run</string>
 					<true/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.url-object</string>
+						<string>com.apple.cocoa.url</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.1</string>
+				<string>2.0</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Safari</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict>
 					<key>URLlist</key>
@@ -646,7 +650,7 @@ end run</string>
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.applescript.url-object</string>
+						<string>com.apple.cocoa.url</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
@@ -664,14 +668,10 @@ end run</string>
 						</array>
 					</array>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Safari</string>
-				</array>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.URLList</string>
 				<key>CFBundleVersion</key>
-				<string>1.1</string>
+				<string>2.0</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
@@ -681,7 +681,9 @@ end run</string>
 					<string>AMCategoryInternet</string>
 				</array>
 				<key>Class Name</key>
-				<string>URLList</string>
+				<string>AMURLListAction</string>
+				<key>IgnoresInput</key>
+				<true/>
 				<key>InputUUID</key>
 				<string>F9245792-1FA1-4A68-BCE1-CC8F586A59D4</string>
 				<key>Keywords</key>
@@ -717,7 +719,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:349.000000</string>
+				<string>309.500000:529.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified URLs.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -739,7 +741,11 @@ end run</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>1.1</string>
+				<string>1.1.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Safari</string>
+				</array>
 				<key>AMParameterProperties</key>
 				<dict>
 					<key>destinationPath</key>
@@ -768,14 +774,10 @@ end run</string>
 					<key>destinationPath</key>
 					<string>/Volumes/Kindle/documents</string>
 				</dict>
-				<key>Application</key>
-				<array>
-					<string>Safari</string>
-				</array>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.DownloadInternetFile</string>
 				<key>CFBundleVersion</key>
-				<string>1.1</string>
+				<string>1.1.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
 				<true/>
 				<key>CanShowWhenRun</key>
@@ -823,7 +825,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>302.000000:123.000000</string>
+				<string>309.500000:123.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Download URLs.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -833,40 +835,40 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>0BF1EC43-CD16-4901-BB9C-73BDD33BFD20</key>
+		<key>024C2999-72EF-4068-90D2-40B8BF4CFEF6</key>
 		<dict>
 			<key>from</key>
-			<string>CAF3B55E-ABF7-496D-AB76-84132FC52296 - CAF3B55E-ABF7-496D-AB76-84132FC52296</string>
-			<key>to</key>
-			<string>0F53622E-4741-458B-A837-0FEF73701BA5 - 0F53622E-4741-458B-A837-0FEF73701BA5</string>
-		</dict>
-		<key>58DC1891-4A5D-400E-8FA7-8D061CCF381C</key>
-		<dict>
-			<key>from</key>
-			<string>C2EF789C-F5E4-4EDD-913B-8B8A11D5F93C - C2EF789C-F5E4-4EDD-913B-8B8A11D5F93C</string>
-			<key>to</key>
 			<string>756E32C3-89D3-4FD5-8E11-60B64710ED68 - 756E32C3-89D3-4FD5-8E11-60B64710ED68</string>
+			<key>to</key>
+			<string>CAF3B55E-ABF7-496D-AB76-84132FC52296 - CAF3B55E-ABF7-496D-AB76-84132FC52296</string>
 		</dict>
-		<key>6A0369DD-AA0F-4688-88AF-70AA8A50C9CC</key>
+		<key>89618B88-ED53-4F7D-A0A7-4ABE026016EC</key>
 		<dict>
 			<key>from</key>
 			<string>BBC895B2-92B8-4275-B387-A83C92499D0A - BBC895B2-92B8-4275-B387-A83C92499D0A</string>
 			<key>to</key>
 			<string>C2EF789C-F5E4-4EDD-913B-8B8A11D5F93C - C2EF789C-F5E4-4EDD-913B-8B8A11D5F93C</string>
 		</dict>
-		<key>9320F585-6622-45E3-A2FA-97E202894BEE</key>
+		<key>944E0CCC-7FF3-4700-BDF0-E97863F08DEB</key>
+		<dict>
+			<key>from</key>
+			<string>C2EF789C-F5E4-4EDD-913B-8B8A11D5F93C - C2EF789C-F5E4-4EDD-913B-8B8A11D5F93C</string>
+			<key>to</key>
+			<string>756E32C3-89D3-4FD5-8E11-60B64710ED68 - 756E32C3-89D3-4FD5-8E11-60B64710ED68</string>
+		</dict>
+		<key>9BCE27D7-F74D-44D7-9D78-B2C46F3F500A</key>
 		<dict>
 			<key>from</key>
 			<string>D45CFB31-C9C5-4322-B285-8167A7B6A4D3 - D45CFB31-C9C5-4322-B285-8167A7B6A4D3</string>
 			<key>to</key>
 			<string>BBC895B2-92B8-4275-B387-A83C92499D0A - BBC895B2-92B8-4275-B387-A83C92499D0A</string>
 		</dict>
-		<key>FC64D4FA-0C11-4F8F-B80B-883E82EB4BC9</key>
+		<key>F03D5C5A-BD13-47A5-AC27-78F2E22B6DA1</key>
 		<dict>
 			<key>from</key>
-			<string>756E32C3-89D3-4FD5-8E11-60B64710ED68 - 756E32C3-89D3-4FD5-8E11-60B64710ED68</string>
-			<key>to</key>
 			<string>CAF3B55E-ABF7-496D-AB76-84132FC52296 - CAF3B55E-ABF7-496D-AB76-84132FC52296</string>
+			<key>to</key>
+			<string>0F53622E-4741-458B-A837-0FEF73701BA5 - 0F53622E-4741-458B-A837-0FEF73701BA5</string>
 		</dict>
 	</dict>
 	<key>state</key>
